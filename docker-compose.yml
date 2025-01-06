@@ -1,0 +1,46 @@
+version: "3.9"
+
+services:
+  py39:
+    container_name: AgentOrbit-py39
+    build:
+      dockerfile: Dockerfile
+      target: py39
+    volumes:
+      - .:/repository/
+    environment:
+      - AGENTORBIT_API_KEY=
+      - AGENTORBIT_API_BASE=
+
+  py310:
+    container_name: AgentOrbit-py310
+    build:
+      dockerfile: Dockerfile
+      target: py310
+    volumes:
+      - .:/repository/
+    environment:
+      - AGENTORBIT_API_KEY=
+      - AGENTORBIT_API_BASE=
+
+  py311:
+    container_name: AgentOrbit-py311
+    build:
+      dockerfile: Dockerfile
+      target: py311
+    volumes:
+      - .:/repository/
+    environment:
+      - AGENTORBIT_API_KEY=
+      - AGENTORBIT_API_BASE=
+
+  py312:
+    container_name: AgentOrbit-py312
+    build:
+      dockerfile: Dockerfile
+      target: py312
+    volumes:
+      - .:/repository/
+    environment:
+      - AGENTORBIT_API_KEY=
+      - AGENTORBIT_API_BASE=
